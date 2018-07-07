@@ -65,6 +65,10 @@ TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
 # Camera
+    android.frameworks.displayservice@1.0_32 \
+    android.hardware.camera.provider@2.4-impl:32 \
+    android.hardware.camera.provider@2.4-service \
+    libxml2
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \

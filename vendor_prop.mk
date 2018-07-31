@@ -76,8 +76,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.ov13855_sunny.low.lux=385 \
     persist.ov13855_sunny.light.lux=370 \
     persist.s5k3l8_ofilm.low.lux=379 \
-    persist.s5k3l8_ofilm.light.lux=367 \
-    persist.vendor.qti.telephony.vt_cam_interface=1 \
+    persist.s5k3l8_ofilm.light.lux=367
+
+# MiuiCamera
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera.shutter_sound.blacklist=com.android.camera
+
+#
+# PROPERTIES FOR IMS
+#
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.ims_volte_enable=1 \
+    persist.radio.videopause.mode=1 \
+    persist.data.iwlan.enable=true \
+    persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     vidc.enc.dcvs.extra-buff-count=2 \
     vendor.vidc.enc.disable_bframes=1 \

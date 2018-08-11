@@ -1801,7 +1801,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/whyred/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/xiaomi/whyred/proprietary/vendor/speccfg/switch_spec.sh:$(TARGET_COPY_OUT_VENDOR)/speccfg/switch_spec.sh \
     vendor/xiaomi/whyred/proprietary/lib/android.hardware.gnss@1.0.so:system/lib/android.hardware.gmss@1.0.so \
-    vendor/xiaomi/whyred/proprietary/lib64/android.hardware.gnss@1.0.so:system/lib64/android.hardware.gmss@1.0.so
+    vendor/xiaomi/whyred/proprietary/lib64/android.hardware.gnss@1.0.so:system/lib64/android.hardware.gmss@1.0.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/android.frameworks.sensorservicc@1.0.so:vendor/lib/android.frameworks.sensorservicc@1.0.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/android.frameworks.sensorservicc@1.0.so:vendor/lib64/android.frameworks.sensorservicc@1.0.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/libicuuk.so:vendor/lib/libicuuk.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/libminicin.so:vendor/lib/libminicin.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/libskia.so:vendor/lib/libskia.so
+
 
 PRODUCT_PACKAGES += \
     libantradio \

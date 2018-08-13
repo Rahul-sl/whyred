@@ -1805,7 +1805,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/android.frameworks.sensorservicc@1.0.so:vendor/lib64/android.frameworks.sensorservicc@1.0.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib/libicuuk.so:vendor/lib/libicuuk.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib/libminicin.so:vendor/lib/libminicin.so \
-    vendor/xiaomi/whyred/proprietary/vendor/lib/libskia.so:vendor/lib/libskia.so
+    vendor/xiaomi/whyred/proprietary/vendor/lib/libskia.so:vendor/lib/libskia.so \
+    vendor/xiaomi/whyred/proprietary/lib64/libsoftkeymaster.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoftkeymaster.so
 
 
 PRODUCT_PACKAGES += \

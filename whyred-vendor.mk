@@ -1801,12 +1801,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/whyred/proprietary/vendor/speccfg/switch_spec.sh:$(TARGET_COPY_OUT_VENDOR)/speccfg/switch_spec.sh \
     vendor/xiaomi/whyred/proprietary/lib/android.hardware.gnss@1.0.so:system/lib/android.hardware.gmss@1.0.so \
     vendor/xiaomi/whyred/proprietary/lib64/android.hardware.gnss@1.0.so:system/lib64/android.hardware.gmss@1.0.so \
-    vendor/xiaomi/whyred/proprietary/vendor/lib/android.frameworks.sensorservicc@1.0.so:vendor/lib/android.frameworks.sensorservicc@1.0.so \
-    vendor/xiaomi/whyred/proprietary/vendor/lib64/android.frameworks.sensorservicc@1.0.so:vendor/lib64/android.frameworks.sensorservicc@1.0.so \
-    vendor/xiaomi/whyred/proprietary/vendor/lib/libicuuk.so:vendor/lib/libicuuk.so \
-    vendor/xiaomi/whyred/proprietary/vendor/lib/libminicin.so:vendor/lib/libminicin.so \
-    vendor/xiaomi/whyred/proprietary/vendor/lib/libskia.so:vendor/lib/libskia.so \
-    vendor/xiaomi/whyred/proprietary/lib64/libsoftkeymaster.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoftkeymaster.so
+    vendor/xiaomi/whyred/proprietary/vendor/lib/android.frameworks.sensorservicc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.sensorservicc@1.0.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/android.frameworks.sensorservicc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.sensorservicc@1.0.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/libicuuk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libicuuk.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/libminicin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminicin.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/libskia.so:$(TARGET_COPY_OUT_VENDOR)/lib/libskia.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libsoftkeymaster.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoftkeymaster.so
 
 
 PRODUCT_PACKAGES += \

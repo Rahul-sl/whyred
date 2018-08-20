@@ -23,6 +23,7 @@ LOCAL_SRC_FILES += \
 
 LOCAL_CFLAGS += \
      -fno-short-enums \
+     -Wno-reinterpret-base-class
 
 LOCAL_HEADER_LIBRARIES := \
     libgps.utils_headers \

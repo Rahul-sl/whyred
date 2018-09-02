@@ -76,19 +76,27 @@ static void init_alarm_boot_properties()
     }
 }
 
-void init_setup_model_properties() {
+void import_kernel_cmdline(const std::function<void(const std::string&, const std::string&)>& fn) {
     std::string cmdline;
     ReadFileToString("/proc/cmdline", &cmdline);
+
     for (const auto& entry : Split(Trim(cmdline), " ")) {
         std::vector<std::string> pieces = Split(entry, "=");
         if (pieces.size() == 2) {
-            std::string key = pieces[0];
-            std::string value = pieces[1];
-            if (key == "androidboot.hwc" && value.find("India") != std::string::npos) {
-                property_set("ro.product.model", "Redmi Note 5 Pro");
-            } else {
-                property_set("ro.product.model", "Redmi Note 5");
-            }
+            fn(pieces[0], pieces[1]);
+        }
+    }
+}
+
+static void init_setup_model_properties(const std::string& key, const std::string& value)
+{
+    if (key.empty()) return;
+
+    if (key == "androidboot.hwc") {
+        if (value.find("India") != std::string::npos) {
+            property_set("ro.product.model", "Redmi Note 5 Pro");
+        } else {
+            property_set("ro.product.model", "Redmi Note 5");
         }
     }
 }
@@ -96,5 +104,5 @@ void init_setup_model_properties() {
 void vendor_load_properties()
 {
     init_alarm_boot_properties();
-    init_setup_model_properties();
+    import_kernel_cmdline(init_setup_model_properties);
 }

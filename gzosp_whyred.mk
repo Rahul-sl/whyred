@@ -27,12 +27,8 @@ $(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-# Inherit from custom vendor
-$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := gzosp_whyred
-PRODUCT_BRAND := Xiaomi	
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
